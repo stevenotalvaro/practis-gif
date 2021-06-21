@@ -16,7 +16,7 @@ export const AddCategory = ({ setCategories }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Add Category</h2>
+      <h2>Search</h2>
       <input
         onChange={hanldeInput}
         placeholder="Type the gif you want to search for"
