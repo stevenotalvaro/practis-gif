@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import { getGifs } from '../helpers/getgifs';
+import React from 'react';
+import useFetchGifs from '../hooks/useFetchGifs';
 import { GifItem } from './GifItem';
 
 export const GifContainer = ({ category }) => {
-  const [images, setImages] = useState([]);
-  useEffect(() => {
-    getGifs(category).then(imgs => setImages(imgs));
-  }, [category]);
+  const { data: images } = useFetchGifs(category);
 
   return (
     <>
