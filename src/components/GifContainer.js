@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { GifItem } from './GifItem';
 
-export const GifContainter = ({ category }) => {
+export const GifContainer = ({ category }) => {
   const [images, setImages] = useState([]);
   useEffect(() => {
     getGifs();

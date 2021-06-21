@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AddCategory } from './components/AddCategory';
-import { GifContainter } from './components/GifContainter';
+import { GifContainer } from './components/GifContainer';
 export default function GifApp() {
   const [categories, setCategories] = useState(['Memes']);
   return (
@@ -9,7 +9,7 @@ export default function GifApp() {
       <AddCategory setCategories={setCategories} />
       <ol>
         {categories.map(category => (
-          <GifContainter key={category} category={category} />
+          <GifContainer key={category} category={category} />
         ))}
       </ol>
     </>
