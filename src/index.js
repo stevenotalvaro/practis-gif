@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import GifApp from './GifApp';
 
-ReactDOM.render(<App />,document.getElementById('root'));
-
+ReactDOM.render(<GifApp />, document.getElementById('root'));

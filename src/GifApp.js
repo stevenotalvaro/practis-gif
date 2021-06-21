@@ -1,14 +1,15 @@
 import React, { useState } from 'react';
+import { AddCategory } from './components/AddCategory';
 
 export default function GifApp() {
-  const [categories, setCategories] = useState('Memes');
+  const [categories, setCategories] = useState(['Memes']);
   return (
     <>
       <h1>Gif App</h1>
       <AddCategory setCategories={setCategories} />
       <ol>
-        {categories.map(cat => {
-          <GifContainer key={cat} categories={cat} />;
+        {categories.map(category => {
+          //   <GifContainer key={category} category={category} />;
         })}
       </ol>
     </>
